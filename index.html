@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>NGSB</title>
+  </head>
+  <body>
+    <section data-container>
+      <div id="buildingBlocks" data-droppable="false">
+        <div
+          class="building-block"
+          data-type="section"
+          data-draggable="true"
+        >
+          <div class="inner-block">Section</div>
+        </div>
+        <div
+          class="building-block"
+          data-type="field-group"
+          data-draggable="true"
+        >
+          <div class="inner-block">Field group</div>
+        </div>
+        <div
+          class="building-block"
+          data-type="text"
+          data-draggable="true"
+        >
+          <div class="inner-block">Text input</div>
+        </div>
+        <div
+          class="building-block"
+          data-type="multiple-choice"
+          data-draggable="true"
+        >
+          <div class="inner-block">Multiple choice</div>
+        </div>
+      </div>
+      <div id="survey" data-droppable="true">
+        <div
+          class="block"
+          data-type="section"
+          data-draggable="true"
+          data-block="1"
+        >
+          <div class="inner-block">Section</div>
+        </div>
+        <div
+          class="block"
+          data-type="multiple-choice"
+          data-draggable="true"
+          data-block="TWO"
+        >
+          <div class="inner-block">Multiple choice</div>
+        </div>
+        <div
+          class="block"
+          data-type="multiple-choice"
+          data-draggable="true"
+          data-block="THREE"
+        >
+          <div class="inner-block">Multiple choice</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

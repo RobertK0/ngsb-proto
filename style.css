@@ -1,0 +1,84 @@
+body {
+  font-family: sans-serif;
+}
+section {
+  display: flex;
+  gap: 1rem;
+}
+#buildingBlocks {
+  margin: 1rem;
+}
+.building-block,
+.block {
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.inner-block {
+  width: 700px;
+  height: 60px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  background-color: #f3f3f3;
+  pointer-events: none;
+}
+
+.test {
+  /* transform: translateY(-80px);
+  transition: transform 1s ease; */
+  animation: slide 0.15s forwards;
+  pointer-events: none;
+  user-select: none;
+}
+
+.test2 {
+  animation: slide2 0.15s forwards;
+  pointer-events: none;
+  user-select: none;
+}
+.block.block-mirror {
+  transition: background-color 0.3s ease;
+}
+.building-block + .building-block,
+.block + .block {
+  /* margin-top: 1rem; */
+}
+.inner-block:hover,
+.inner-block:hover {
+  background-color: #eee;
+}
+.inner-block::before {
+  content: url(./handle.svg);
+  background-color: white;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  border: 1px solid #ae1065;
+  border-radius: 2px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-80px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateY(80px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
