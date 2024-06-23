@@ -13,29 +13,68 @@
   <body>
     <section data-container>
       <div id="buildingBlocks" data-droppable="false">
+        <h4>Structure fields</h4>
         <div
-          class="building-block"
+          class="building-block constitutional-block"
+          data-type="page"
+          data-level="1"
+          data-draggable="true"
+        >
+          <div class="inner-block">Page</div>
+          <div class="drop-zone"></div>
+        </div>
+        <div
+          class="building-block constitutional-block"
           data-type="section"
+          data-level="2"
           data-draggable="true"
         >
           <div class="inner-block">Section</div>
+          <div class="drop-zone"></div>
         </div>
         <div
-          class="building-block"
+          class="building-block constitutional-block"
           data-type="field-group"
+          data-level="13"
           data-draggable="true"
         >
           <div class="inner-block">Field group</div>
+          <div class="drop-zone"></div>
         </div>
         <div
-          class="building-block"
-          data-type="text"
+          class="building-block constitutional-block"
+          data-type="related-field-group"
+          data-level="4"
           data-draggable="true"
         >
-          <div class="inner-block">Text input</div>
+          <div class="inner-block">Related field group</div>
+          <div class="drop-zone"></div>
+        </div>
+
+        <h4>Input fields</h4>
+        <div
+          class="building-block input-block"
+          data-type="country"
+          data-draggable="true"
+        >
+          <div class="inner-block">Country</div>
         </div>
         <div
-          class="building-block"
+          class="building-block input-block"
+          data-type="text-line"
+          data-draggable="true"
+        >
+          <div class="inner-block">Text line</div>
+        </div>
+        <div
+          class="building-block input-block"
+          data-type="text-block"
+          data-draggable="true"
+        >
+          <div class="inner-block">Text block</div>
+        </div>
+        <div
+          class="building-block input-block"
           data-type="multiple-choice"
           data-draggable="true"
         >
@@ -44,12 +83,13 @@
       </div>
       <div id="survey" data-droppable="true">
         <div
-          class="block"
+          class="block constitutional-block"
           data-type="section"
           data-draggable="true"
-          data-block="1"
+          data-block="2"
         >
           <div class="inner-block">Section</div>
+          <div class="drop-zone"></div>
         </div>
         <div
           class="block"

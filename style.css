@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 body {
-  font-family: sans-serif;
+  font-family: "Inter";
+}
+
+h4 {
+  color: #ae1065;
 }
 section {
   display: flex;
@@ -14,6 +19,15 @@ section {
   cursor: pointer;
 }
 
+.constitutional-block {
+  /* border: 2px solid purple; */
+  padding-bottom: 0;
+}
+
+.input-block {
+  /* border: 2px solid aqua; */
+}
+
 .inner-block {
   width: 700px;
   height: 60px;
@@ -21,13 +35,26 @@ section {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   transition: background-color 0.3s ease;
   user-select: none;
-  background-color: #f3f3f3;
+  background-color: #fdf0f7;
   pointer-events: none;
+  color: #ae1065;
+}
+.drop-zone {
+  padding: 16px 0 0 0;
+  /* background-color: rgba(137, 214, 147, 0.412); */
 }
 
+.drop-zone .building-block {
+  padding-left: 32px;
+}
+
+.drop-zone .inner-block {
+  width: 100%;
+  box-sizing: border-box;
+}
 .test {
   /* transform: translateY(-80px);
   transition: transform 1s ease; */
@@ -52,7 +79,7 @@ section {
 .inner-block:hover {
   background-color: #eee;
 }
-.inner-block::before {
+#survey .inner-block::before {
   content: url(./handle.svg);
   background-color: white;
   display: inline-block;
